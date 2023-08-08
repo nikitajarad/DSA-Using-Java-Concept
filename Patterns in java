@@ -1,3 +1,4 @@
+Basic Patter
 1)Rectangle Star Pattern
 class RectStarPattern{
     public static void main(String[] args) {
@@ -14,9 +15,6 @@ class RectStarPattern{
 }
 
 2)Holo Rect Star Pattern
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
-
 public class holoRectStarPattern{
     public static void main(String[] args) {
         for (int i=1;i<=4;i++)
@@ -39,3 +37,349 @@ public class holoRectStarPattern{
         
     }
 }
+
+3)Half Pyramid Pattern
+public class HalfPyramidpattern
+{
+public static void main(String[] args)
+{
+	for(int i=1;i<=4;i++)
+	{
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println(" ");
+	}
+}
+
+}
+
+4)Invert half Pyramid Pattern
+public class InvertHalfPyramidpattern
+{
+public static void main(String[] args)
+{
+	for(int i=4;i>=1;i--)
+	{
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println(" ");
+	}
+}
+}
+
+5)Invert half Pyramid Pattern rotate at 180 degree
+
+public class HalfPyramidpattern
+{
+public static void main(String[] args)
+{
+	int n=4;
+	//outer loop row
+	for(int i=1;i<=n;i++)
+	{
+	
+	//space is n-i n==4
+	for (int s=1;s<=n-i;s++)
+	{
+		System.out.print(" ");
+	}
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println(" ");
+	}
+}
+
+}
+
+
+
+
+6)Invert half Pyramid Pattern rotate at 360 degree
+**** 
+ *** 
+  **
+   *
+public class invertHalfPyramidpattern360
+{
+public static void main(String[] args)
+{
+	int n=4;
+	//outer loop row
+	for(int i=4;i>=1;i--)
+	{
+	
+	//space is n-i n==4
+	for (int s=1;s<=n-i;s++)
+	{
+		System.out.print(" ");
+	}
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println(" ");
+	}
+}
+
+}
+
+
+7)Number Half Pyramid
+1
+12
+123
+1234
+
+public class NumberHalfPyramidpattern
+{
+public static void main(String[] args)
+  {
+	int n=4;
+	//outer loop row
+	for(int i=1;i<=n;i++)
+	{
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print(j+" ");
+		}
+		System.out.println(" ");
+	}
+   }
+
+}
+
+8)invert Number half pyramid
+1234
+123
+12
+1
+public class HalfPyramidpattern
+{
+public static void main(String[] args)
+  {
+	int n=4;
+	//outer loop row
+	for(int i=n;i>=1;i--)
+	{
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print(j+" ");
+		}
+		System.out.println(" ");
+	}
+   }
+}
+
+
+9)
+1  
+2 3  
+4 5 6  
+7 8 9 10  
+11 12 13 14 15 
+
+public class HalfPyramidpattern
+{
+public static void main(String[] args)
+  {
+	int n=5,cnt=1;
+	//outer loop row
+	for(int i=1;i<=n;i++)
+	{
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print(cnt+" ");
+			cnt++;
+		}
+		System.out.println(" ");
+	}
+   }
+}
+
+10)
+0  
+1 1  
+0 0 0  
+1 1 1 1  
+0 0 0 0 0 
+
+public class NumberHalfPyramidpattern
+{
+public static void main(String[] args)
+  {
+	int n=5,sum=0;
+	//outer loop row
+	for(int i=1;i<=n;i++)
+	{
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+		 if(sum%2==0)
+		    {//even
+			System.out.print(0+" ");
+			
+		    }
+		    
+		    else
+		    {//odd
+		       System.out.print(1+" ");
+		    }
+		}
+		sum++;
+		System.out.println(" ");
+	}
+   }
+}
+
+11)
+1  
+0 1  
+0 1 0  
+1 0 1 0  
+1 0 1 0 1  
+
+
+public class HalfPyramidpattern
+{
+public static void main(String[] args)
+  {
+	int n=5,sum=0;
+	//outer loop row
+	for(int i=1;i<=n;i++)
+	{
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{sum++;
+		 if(sum%2==0)
+		    {//even
+			System.out.print(0+" ");
+			
+		    }
+		    
+		    else
+		    {//odd
+		       System.out.print(1+" ");
+		    }
+		}
+		System.out.println(" ");
+	}
+   }
+}
+
+
+12) even loc of i+j then print 1 else 0 
+1  
+0 1  
+1 0 1  
+0 1 0 1  
+1 0 1 0 1
+
+public class HalfPyramidpattern
+{
+public static void main(String[] args)
+  {
+	int n=5,sum=0;
+	//outer loop row
+	for(int i=1;i<=n;i++)
+	{
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+		sum=i+j;
+		 if(sum%2==0)
+		    {//even
+			System.out.print(1+" ");
+			
+		    }
+		    
+		    else
+		    {//odd
+		       System.out.print(0+" ");
+		    }
+		}
+		System.out.println(" ");
+	}
+   }
+}
+
+13)
+    1  
+   1 2  
+  1 2 3  
+ 1 2 3 4  
+1 2 3 4 5 
+
+public class HalfPyramidpattern
+{
+public static void main(String[] args)
+  {
+	int n=5,cnt=1;
+	//outer loop row
+	for(int i=1;i<=n;i++)
+	{
+	
+	//space is n-i n==4
+	for (int s=1;s<=n-i;s++)
+	{
+		System.out.print(" ");
+	}
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+		       System.out.print(j+" ");
+	        }
+		System.out.println(" ");
+	}
+   }
+}
+
+14) 1  
+   2 2  
+  3 3 3  
+ 4 4 4 4  
+5 5 5 5 5  
+
+public class HalfPyramidpattern
+{
+public static void main(String[] args)
+  {
+	int n=5,cnt=1;
+	//outer loop row
+	for(int i=1;i<=n;i++)
+	{
+	
+	//space is n-i n==4
+	for (int s=1;s<=n-i;s++)
+	{
+		System.out.print(" ");
+	}
+	//inner loop col
+		for(int j=1;j<=i;j++)
+		{
+		       System.out.print(i+" ");
+	        }
+		System.out.println(" ");
+	}
+   }
+
+}
+
+Advance Patterns
+
+
+
+
+
+
+
